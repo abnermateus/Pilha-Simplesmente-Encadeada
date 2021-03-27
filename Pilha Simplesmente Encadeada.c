@@ -95,7 +95,6 @@ int empilhar(Pilha *pilha, TipoItem *item)
             pilha->ultimo = novo;
 
         pilha->quantos++;
-
         return 1;
     }
 }
@@ -106,10 +105,8 @@ TipoItem *desempilhar(Pilha *pilha)
         return NULL;
 
     Celula *aux = pilha->primeiro;
-
     pilha->primeiro = aux->proximo;
     aux->proximo = NULL;
-  
     TipoItem *dado = aux->item;
 
     free(aux);
