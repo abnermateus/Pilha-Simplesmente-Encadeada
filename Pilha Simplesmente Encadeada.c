@@ -119,7 +119,6 @@ TipoItem *desempilhar(Pilha *pilha)
 
 int tamanho(Pilha *pilha)
 {
-
     if (pilha == NULL)
         return 0;
 
